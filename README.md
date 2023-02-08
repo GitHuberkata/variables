@@ -14,7 +14,7 @@ Whenever the count number is changed we will need to update the count only in on
 - Terraform CLI
 - AWS credentials
 
-### Repo location
+
 
 
 
