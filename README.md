@@ -1,4 +1,4 @@
-# A sample repo configuration to demomstrate usage of "variables"
+# A sample repo configuration to demonstrate usage of "variables"
 
 ### Use Case
 We need to create N ec2 instances. To manage our infrastrucutre easily and quickly and to avoid repetions and mistakes we we create an additional file called `variables.tf` with our variables, in our example we introduce variable `variable "instance_count"`. In the main configuration file we put the count to be equel to our variable:
