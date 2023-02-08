@@ -14,13 +14,13 @@ provider "aws" {
 resource "aws_instance" "myec2" {
   ami           = "ami-082b5a644766e0e6f"
   instance_type = "t2.micro"
-  count = var.instance_count
-  
+  count         = var.instance_count
+
   tags = {
     Name = "OutputTaskMachine-${count.index}"
-    }
+  }
 }
 
 output "ec2_names_list" {
-    value = aws_instance.myec2[*].tags
+  value = aws_instance.myec2[*].tags
 }
